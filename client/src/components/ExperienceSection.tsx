@@ -74,9 +74,7 @@ export default function ExperienceSection() {
               <div key={exp.id} className="flex flex-col md:flex-row items-center">
                 {/* Timeline dot for desktop */}
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
-                  <ScrollAnimation animation="scale-in" delay={100}>
-                    <div className="w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
-                  </ScrollAnimation>
+                  <div className="w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
                 </div>
                 
                 {/* Content layout - alternating sides on desktop */}

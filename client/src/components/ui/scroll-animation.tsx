@@ -24,12 +24,32 @@ export function ScrollAnimation({
     triggerOnce,
   });
 
+  // Custom animation classes
+  const getAnimationClass = () => {
+    if (!inView) return '';
+    
+    switch (animation) {
+      case 'fade-in-up':
+        return 'animate-[fadeInUp_0.6s_ease-out_forwards]';
+      case 'fade-in-right':
+        return 'animate-[fadeInRight_0.6s_ease-out_forwards]';
+      case 'fade-in-left':
+        return 'animate-[fadeInLeft_0.6s_ease-out_forwards]';
+      case 'fade-in':
+        return 'animate-[fadeIn_0.6s_ease-out_forwards]';
+      case 'scale-in':
+        return 'animate-[scaleIn_0.4s_ease-out_forwards]';
+      default:
+        return '';
+    }
+  };
+
   return (
     <div
       ref={ref}
       className={cn(
         'opacity-0',
-        inView && `animate-${animation}`,
+        getAnimationClass(),
         className
       )}
       style={{ animationDelay: `${delay}ms` }}

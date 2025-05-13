@@ -1,3 +1,5 @@
+import { ScrollAnimation } from "./ui/scroll-animation";
+
 interface Experience {
   id: number;
   role: string;
@@ -57,9 +59,11 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">
-          Professional Experience & Internships
-        </h2>
+        <ScrollAnimation>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">
+            Professional Experience & Internships
+          </h2>
+        </ScrollAnimation>
         
         <div className="relative">
           {/* Timeline line */}
@@ -69,25 +73,34 @@ export default function ExperienceSection() {
             {experiences.map((exp, index) => (
               <div key={exp.id} className="flex flex-col md:flex-row items-center">
                 {/* Timeline dot for desktop */}
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+                  <ScrollAnimation animation="scale-in" delay={100}>
+                    <div className="w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
+                  </ScrollAnimation>
+                </div>
                 
                 {/* Content layout - alternating sides on desktop */}
                 <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left order-first md:order-last'}`}>
-                  <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                    <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-2">
-                      {exp.duration}
-                    </span>
-                    <h3 className="font-heading font-bold text-xl mb-1">{exp.role}</h3>
-                    <h4 className="text-gray-600 font-semibold mb-4">{exp.company}</h4>
-                    <ul className={`space-y-2 text-gray-700 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className={`mt-1.5 h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0 ${index % 2 === 0 ? 'md:order-last md:ml-2' : 'mr-2'}`}></span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <ScrollAnimation 
+                    animation={index % 2 === 0 ? "fade-in-right" : "fade-in-left"} 
+                    delay={200 + (index * 100)}
+                  >
+                    <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                      <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-2">
+                        {exp.duration}
+                      </span>
+                      <h3 className="font-heading font-bold text-xl mb-1">{exp.role}</h3>
+                      <h4 className="text-gray-600 font-semibold mb-4">{exp.company}</h4>
+                      <ul className={`space-y-2 text-gray-700 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                        {exp.description.map((item, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className={`mt-1.5 h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0 ${index % 2 === 0 ? 'md:order-last md:ml-2' : 'mr-2'}`}></span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </ScrollAnimation>
                 </div>
                 
                 {/* Empty div for layout balance */}

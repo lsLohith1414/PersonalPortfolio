@@ -39,6 +39,7 @@ export default function Footer() {
             <a href="#home" className="mx-3 my-2 hover:text-blue-300 transition-colors">Home</a>
             <a href="#about" className="mx-3 my-2 hover:text-blue-300 transition-colors">About</a>
             <a href="#skills" className="mx-3 my-2 hover:text-blue-300 transition-colors">Skills</a>
+            <a href="#experience" className="mx-3 my-2 hover:text-blue-300 transition-colors">Experience</a>
             <a href="#projects" className="mx-3 my-2 hover:text-blue-300 transition-colors">Projects</a>
             <a href="#certifications" className="mx-3 my-2 hover:text-blue-300 transition-colors">Certifications</a>
             <a href="#blog" className="mx-3 my-2 hover:text-blue-300 transition-colors">Blog</a>

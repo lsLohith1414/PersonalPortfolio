@@ -51,6 +51,10 @@ export default function Navbar() {
             Skills
             <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
           </a>
+          <a href="#experience" className="nav-link font-body font-semibold relative hover:text-primary-light transition-colors duration-300">
+            Experience
+            <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+          </a>
           <a href="#projects" className="nav-link font-body font-semibold relative hover:text-primary-light transition-colors duration-300">
             Projects
             <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -88,6 +92,7 @@ export default function Navbar() {
           <a href="#home" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Home</a>
           <a href="#about" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">About</a>
           <a href="#skills" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Skills</a>
+          <a href="#experience" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Experience</a>
           <a href="#projects" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Projects</a>
           <a href="#certifications" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Certifications</a>
           <a href="#blog" onClick={closeMenu} className="font-body font-semibold py-2 hover:text-primary-light transition-colors">Blog</a>

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { ScrollAnimation } from "./ui/scroll-animation";
 
 export default function SkillsSection() {
   const progressBarsRef = useRef<HTMLDivElement>(null);
@@ -33,11 +34,13 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">Skills & Technologies</h2>
+        <ScrollAnimation>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">Skills & Technologies</h2>
+        </ScrollAnimation>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12" ref={progressBarsRef}>
           {/* Technical Skills */}
-          <div>
+          <ScrollAnimation animation="fade-in-right" delay={100}>
             <h3 className="text-2xl font-heading font-semibold mb-8">Technical Skills</h3>
             
             <div className="space-y-6">
@@ -91,44 +94,44 @@ export default function SkillsSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
           
           {/* Technologies */}
-          <div>
+          <ScrollAnimation animation="fade-in-left" delay={200}>
             <h3 className="text-2xl font-heading font-semibold mb-8">Technologies</h3>
             
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={300} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fab fa-python text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">Python</span>
-              </div>
+              </ScrollAnimation>
               
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={400} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fab fa-react text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">React</span>
-              </div>
+              </ScrollAnimation>
               
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={500} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fab fa-node-js text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">Node.js</span>
-              </div>
+              </ScrollAnimation>
               
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={600} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fas fa-database text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">MongoDB</span>
-              </div>
+              </ScrollAnimation>
               
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={700} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fas fa-brain text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">TensorFlow</span>
-              </div>
+              </ScrollAnimation>
               
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <ScrollAnimation animation="scale-in" delay={800} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <i className="fas fa-chart-bar text-4xl text-blue-900 mb-3"></i>
                 <span className="font-body font-semibold">Data Analysis</span>
-              </div>
+              </ScrollAnimation>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>

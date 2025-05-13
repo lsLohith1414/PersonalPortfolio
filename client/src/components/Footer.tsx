@@ -40,6 +40,7 @@ export default function Footer() {
             <a href="#about" className="mx-3 my-2 hover:text-blue-300 transition-colors">About</a>
             <a href="#skills" className="mx-3 my-2 hover:text-blue-300 transition-colors">Skills</a>
             <a href="#projects" className="mx-3 my-2 hover:text-blue-300 transition-colors">Projects</a>
+            <a href="#certifications" className="mx-3 my-2 hover:text-blue-300 transition-colors">Certifications</a>
             <a href="#blog" className="mx-3 my-2 hover:text-blue-300 transition-colors">Blog</a>
             <a href="#contact" className="mx-3 my-2 hover:text-blue-300 transition-colors">Contact</a>
           </div>

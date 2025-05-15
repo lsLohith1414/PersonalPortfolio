@@ -7,7 +7,7 @@ export default function AboutSection() {
     // Use absolute path with BASE_URL
     const resumePath = new URL('assets/resume.pdf', import.meta.env.BASE_URL).href;
     link.href = resumePath;
-    link.download = 'Lohith_HS_Resume.pdf';
+    link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

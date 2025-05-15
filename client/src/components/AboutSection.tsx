@@ -1,5 +1,5 @@
 import { ScrollAnimation } from "./ui/scroll-animation";
-import profileImage from "../assets/Linkedin2.jpg";
+import profileImage from ".../assets/Linkedin2.jpg";
 
 export default function AboutSection() {
   const handleDownloadResume = () => {

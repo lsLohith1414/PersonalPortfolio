@@ -4,10 +4,11 @@ export default function AboutSection() {
   const handleDownloadResume = () => {
     // Create a link element
     const link = document.createElement('a');
-    // Use the import.meta.env.BASE_URL to get the correct path
-    link.href = `${import.meta.env.BASE_URL}src/assets/Resume Data science.pdf`;
+    // Use the correct path for the resume in public folder
+    link.href = `${import.meta.env.BASE_URL}assets/Resume Data science.pdf`;
     link.setAttribute('target', '_blank');
     link.setAttribute('rel', 'noopener noreferrer');
+    link.setAttribute('download', 'Lohith_HS_Resume.pdf'); // Add download attribute
     link.click();
   };
 
@@ -23,7 +24,7 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src={`${import.meta.env.BASE_URL}src/assets/Linkedin2.jpg`}
+                src={`${import.meta.env.BASE_URL}assets/Linkedin2.jpg`}
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
               />

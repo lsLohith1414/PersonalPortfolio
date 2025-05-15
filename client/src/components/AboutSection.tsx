@@ -2,13 +2,17 @@ import { ScrollAnimation } from "./ui/scroll-animation";
 
 export default function AboutSection() {
   const handleDownloadResume = () => {
+    // Use Vite's built-in BASE_URL environment variable
+    const resumeUrl = `${window.location.origin}${import.meta.env.BASE_URL}assets/resume.pdf`;
+    
     // Create a direct download link
     const link = document.createElement('a');
-    link.href = `${import.meta.env.BASE_URL}assets/resume.pdf`;
+    link.href = resumeUrl;
     link.download = 'resume.pdf';
-    link.type = 'application/pdf';
-    // Trigger download
-    link.dispatchEvent(new MouseEvent('click'));
+    link.target = '_blank'; // Open in new tab as fallback
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -23,7 +27,7 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+                src="/PersonalPortfolio/assets/profile.jpg"
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
               />
@@ -41,17 +45,12 @@ export default function AboutSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href={`${import.meta.env.BASE_URL}assets/resume.pdf`}
-                download="resume.pdf"
+              <button 
+                onClick={handleDownloadResume}
                 className="inline-flex items-center justify-center bg-blue-900 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleDownloadResume();
-                }}
               >
                 <i className="fa-solid fa-download mr-2"></i> Download Resume
-              </a>
+              </button>
               <a 
                 href="#contact" 
                 className="inline-flex items-center justify-center bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"

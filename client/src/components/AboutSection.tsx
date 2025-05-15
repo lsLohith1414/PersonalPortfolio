@@ -5,7 +5,7 @@ export default function AboutSection() {
     // Create a link element
     const link = document.createElement('a');
     // Use absolute path with BASE_URL
-    const resumePath = new URL('assets/resume.pdf', import.meta.env.BASE_URL).href;
+    const resumePath = new URL('client/public/assets/resume.pdf', import.meta.env.BASE_URL).href;
     link.href = resumePath;
     link.download = 'resume.pdf';
     document.body.appendChild(link);
@@ -25,7 +25,7 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src={new URL('assets/profile.jpg', import.meta.env.BASE_URL).href}
+                src={new URL('client/public/assets/profile.jpg', import.meta.env.BASE_URL).href}
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
               />

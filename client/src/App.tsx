@@ -4,7 +4,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
-import { useBasePath } from "./hooks/useBasePath";
 import { useState, useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 
@@ -30,8 +29,6 @@ function useHashLocation(): [string, (to: string) => void] {
 }
 
 function App() {
-  const base = useBasePath();
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

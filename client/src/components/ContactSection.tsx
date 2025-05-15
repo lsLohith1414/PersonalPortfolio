@@ -236,7 +236,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Email</h4>
-                      <p className="text-gray-600">contact@johndoe.com</p>
+                      <p className="text-gray-600">lohithls14@gmail.com</p>
                     </div>
                   </div>
                 </ScrollAnimation>
@@ -248,7 +248,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Phone</h4>
-                      <p className="text-gray-600">+1 (123) 456-7890</p>
+                      <p className="text-gray-600">+91 8296389725</p>
                     </div>
                   </div>
                 </ScrollAnimation>
@@ -260,7 +260,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Location</h4>
-                      <p className="text-gray-600">San Francisco, CA</p>
+                      <p className="text-gray-600">Shimoga, Karnataka, India</p>
                     </div>
                   </div>
                 </ScrollAnimation>
@@ -272,19 +272,25 @@ export default function ContactSection() {
                 <h3 className="text-xl font-heading font-semibold mb-4">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/lohith-hs-8a707a2b5/" 
                     className="bg-blue-100 text-blue-900 hover:bg-blue-900 hover:text-white p-3 rounded-full transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <i className="fab fa-linkedin-in text-xl"></i>
                   </a>
                   <a 
-                    href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414" 
                     className="bg-blue-100 text-blue-900 hover:bg-blue-900 hover:text-white p-3 rounded-full transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <i className="fab fa-github text-xl"></i>
                   </a>
                   <a 
-                    href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                    href="https://twitter.com/Lohithhs14" 
                     className="bg-blue-100 text-blue-900 hover:bg-blue-900 hover:text-white p-3 rounded-full transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <i className="fab fa-twitter text-xl"></i>

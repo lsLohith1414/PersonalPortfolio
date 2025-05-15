@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="font-heading font-bold text-2xl">John Doe</a>
+            <a href="#" className="font-heading font-bold text-2xl">Lohith H S</a>
             <p className="mt-2 text-blue-300">AI/ML Engineer & Data Scientist</p>
           </div>
           
@@ -47,13 +47,21 @@ export default function Footer() {
           </div>
           
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
+            <a target="_blank" 
+                  rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/lohith-hs-8a707a2b5/"  className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
+              
               <i className="fab fa-linkedin-in text-xl"></i>
+              
             </a>
-            <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
+            <a target="_blank" 
+                    rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414"  className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
               <i className="fab fa-github text-xl"></i>
             </a>
-            <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
+            <a target="_blank" 
+                  rel="noopener noreferrer"
+                    href="https://twitter.com/Lohithhs14"  className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
               <i className="fab fa-twitter text-xl"></i>
             </a>
             <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
@@ -63,7 +71,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; 2023 John Doe. All rights reserved.</p>
+          <p>&copy; 2025 Lohith H S. All rights reserved.</p>
           
           {showButton && (
             <button 

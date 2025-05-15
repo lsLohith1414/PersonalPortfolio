@@ -35,7 +35,7 @@ export default function Navbar() {
       isScrolled ? "py-2" : "py-4"
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="text-primary font-heading font-bold text-2xl">John Doe</a>
+        <a href="#" className="text-primary font-heading font-bold text-2xl">Lohith H S</a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">

@@ -1,6 +1,16 @@
 import { ScrollAnimation } from "./ui/scroll-animation";
 
 export default function AboutSection() {
+  const handleDownloadResume = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Use the import.meta.env.BASE_URL to get the correct path
+    link.href = `${import.meta.env.BASE_URL}src/assets/Resume Data science.pdf`;
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+    link.click();
+  };
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -11,11 +21,11 @@ export default function AboutSection() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Profile Image */}
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
-            <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105">
+            <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=700" 
-                alt="John Doe - AI/ML Engineer and Data Scientist" 
-                className="w-full h-auto rounded-lg"
+                src={`${import.meta.env.BASE_URL}src/assets/Linkedin2.jpg`}
+                alt="Lohith H S - AI/ML Engineer and Data Scientist" 
+                className="w-full h-[500px] object-cover object-center rounded-lg"
               />
             </div>
           </ScrollAnimation>
@@ -31,12 +41,12 @@ export default function AboutSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#" 
+              <button 
+                onClick={handleDownloadResume}
                 className="inline-flex items-center justify-center bg-blue-900 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <i className="fa-solid fa-download mr-2"></i> Download Resume
-              </a>
+              </button>
               <a 
                 href="#contact" 
                 className="inline-flex items-center justify-center bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"

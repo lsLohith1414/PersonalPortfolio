@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sample Project 1",
+      "description": "A description of your first project",
+      "technologies": ["React", "TypeScript", "Tailwind"],
+      "imageUrl": "/project1.jpg",
+      "githubUrl": "https://github.com/lsLohith1414",
+      "liveUrl": "https://project1.demo.com"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"]
+    },
+    {
+      "category": "Tools & Others",
+      "items": ["Git", "VS Code", "Figma", "Responsive Design"]
+    }
+  ],
+  "social": {
+    "github": "https://github.com/lsLohith1414",
+    "linkedin": "https://www.linkedin.com/in/lohith-hs-8a707a2b5/",
+    "twitter": "https://x.com/LohithHS622415"
+  },
+  "contact": {
+    "email": "your.email@example.com",
+    "github": "https://github.com/lsLohith1414",
+    "linkedin": "https://www.linkedin.com/in/lohith-hs-8a707a2b5/"
+  }
+} 

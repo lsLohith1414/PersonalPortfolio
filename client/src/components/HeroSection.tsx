@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="min-h-screen flex items-center justify-center">
           <div className="container mx-auto px-4 z-20 text-center">
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-4 animate-fadeUp">
-              I am <span className="text-blue-300">John Doe</span>
+              I am <span className="text-blue-300">Lohith H S</span>
             </h1>
             <h2 className="font-heading font-semibold text-xl md:text-2xl mb-6 animate-fadeUp animation-delay-200">
               AI/ML Engineer | Data Scientist | MERN Stack Developer

@@ -1,4 +1,4 @@
-import { createContext, useContext, ReactNode, useState, useEffect } from 'react';
+import { createContext, useContext, ReactNode, useState } from 'react';
 import portfolioData from '../data/portfolio.json';
 
 type PortfolioContextType = {

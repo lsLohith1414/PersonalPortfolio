@@ -1,5 +1,6 @@
 import { ScrollAnimation } from "./ui/scroll-animation";
-import profileImage from "../assets/profile.jpg";
+// Remove the direct import and use public assets path
+// import profileImage from "../assets/profile.jpg";
 
 export default function AboutSection() {
   const handleDownloadResume = () => {
@@ -28,7 +29,7 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src={profileImage}
+                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
               />

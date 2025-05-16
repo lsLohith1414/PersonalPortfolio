@@ -1,6 +1,4 @@
 import { ScrollAnimation } from "./ui/scroll-animation";
-// Remove the direct import and use public assets path
-// import profileImage from "../assets/profile.jpg";
 
 export default function AboutSection() {
   const handleDownloadResume = () => {

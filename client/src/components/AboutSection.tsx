@@ -27,7 +27,7 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+                src="/PersonalPortfolio/assets/profile.jpg"
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
               />

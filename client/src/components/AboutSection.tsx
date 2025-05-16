@@ -27,9 +27,17 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-right" className="md:w-2/5 flex justify-center">
             <div className="relative overflow-hidden rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[400px]">
               <img 
-                src="/PersonalPortfolio/assets/profile.jpg"
+                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  console.error('Image failed to load:', img.src);
+                  // Fallback to direct path if the first attempt fails
+                  if (!img.src.includes('assets/profile.jpg')) {
+                    img.src = '/assets/profile.jpg';
+                  }
+                }}
               />
             </div>
           </ScrollAnimation>

@@ -19,7 +19,7 @@ export default function CertificationsSection() {
       title: "Deep Learning Specialization",
       organization: "Coursera (deeplearning.ai)",
       date: "December 2022",
-      image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
+      image: `${import.meta.env.BASE_URL}supervised_certificate.jpg`
     },
     {
       id: 2,

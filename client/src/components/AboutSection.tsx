@@ -15,16 +15,6 @@ export default function AboutSection() {
     document.body.removeChild(link);
   };
 
-  // Function to get the correct image path based on environment
-  const getImagePath = () => {
-    // Check if we're in development or production
-    if (import.meta.env.DEV) {
-      return '/assets/profile.jpg';
-    }
-    // In production (GitHub Pages), use the full path
-    return `${window.location.origin}/PersonalPortfolio/assets/profile.jpg`;
-  };
-
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -40,16 +30,6 @@ export default function AboutSection() {
                 src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                 alt="Lohith H S - AI/ML Engineer and Data Scientist" 
                 className="w-full h-[500px] object-cover object-center rounded-lg"
-                onError={(e) => {
-                  const img = e.target as HTMLImageElement;
-                  console.error('Failed to load image:', img.src);
-                  // Try alternate paths if the first one fails
-                  if (img.src.includes('/PersonalPortfolio/assets/')) {
-                    img.src = '/assets/profile.jpg';
-                  } else if (img.src.includes('/assets/')) {
-                    img.src = 'assets/profile.jpg';
-                  }
-                }}
               />
             </div>
           </ScrollAnimation>

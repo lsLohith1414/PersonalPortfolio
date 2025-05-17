@@ -14,7 +14,7 @@ export default function ProjectsSection() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                  src= {`${import.meta.env.BASE_URL}assets/project1.jpg`}
                   alt="AI-Powered Customer Sentiment Analysis Dashboard" 
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />
@@ -27,8 +27,9 @@ export default function ProjectsSection() {
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Python</span>
                   <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">TensorFlow</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">BERT</span>
                   <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Flask</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Yolov8</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">FaceNet</span>
                 </div>
                 <div className="flex space-x-3">
                   <a 
@@ -38,7 +39,9 @@ export default function ProjectsSection() {
                     <i className="fas fa-external-link-alt mr-1"></i> Live Demo
                   </a>
                   <a 
-                    href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414/Face_attendance_tracking" 
                     className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
                   >
                     <i className="fab fa-github mr-1"></i> GitHub
@@ -47,9 +50,9 @@ export default function ProjectsSection() {
               </div>
             </div>
           </ScrollAnimation>
-          
-          {/* Project 2 */}
-          <ScrollAnimation animation="fade-in-up" delay={200}>
+          {/*  
+        {/* Project 2 */}
+         {/* <ScrollAnimation animation="fade-in-up" delay={200}>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img 
@@ -85,10 +88,10 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </ScrollAnimation>
+          </ScrollAnimation>*/}
           
           {/* Project 3 */}
-          <ScrollAnimation animation="fade-in-up" delay={300}>
+        {/*  <ScrollAnimation animation="fade-in-up" delay={300}>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img 
@@ -124,10 +127,10 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </ScrollAnimation>
+          </ScrollAnimation>*/}
           
           {/* Project 4 */}
-          <ScrollAnimation animation="fade-in-up" delay={400}>
+         {/* <ScrollAnimation animation="fade-in-up" delay={400}>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img 
@@ -163,7 +166,7 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </ScrollAnimation>
+          </ScrollAnimation>*/}
         </div>
       </div>
     </section>

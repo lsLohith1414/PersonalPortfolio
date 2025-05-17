@@ -38,10 +38,10 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-left" className="md:w-3/5" delay={200}>
             <h3 className="text-2xl font-heading font-semibold mb-4">Who I Am</h3>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm a passionate AI/ML Engineer and Data Scientist with over 5 years of experience in developing innovative solutions that transform complex data into actionable insights. My expertise spans machine learning, deep learning, natural language processing, and full-stack development with the MERN stack.
+            I am a passionate AI/ML enthusiast and aspiring Data Scientist with a strong foundation in developing innovative solutions that transform data into actionable insights. My expertise includes machine learning, deep learning, computer vision, and full-stack development using the MERN stack.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              I've worked with leading tech companies to implement cutting-edge AI solutions that drive business growth and solve real-world problems. I'm committed to staying at the forefront of technological advancements and creating intelligent systems that make a difference.
+            Through academic projects and internships, I have successfully implemented AI solutions, such as an image-based attendance tracking system using FaceNet and YOLOv8, optimizing model accuracy and reducing false positives. I am committed to continuous learning and staying updated with the latest advancements in AI/ML to create impactful, data-driven solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

@@ -16,32 +16,32 @@ export default function CertificationsSection() {
   const certificates: Certificate[] = [
     {
       id: 1,
-      title: "Deep Learning Specialization",
+      title: "Supervised Machine Learning: Regression and Classification",
       organization: "Coursera (deeplearning.ai)",
-      date: "December 2022",
-      image: `${import.meta.env.BASE_URL}supervised_certificate.jpg`
+      date: "March 2025",
+      image: `${import.meta.env.BASE_URL}assets/certificate_1.jpg`
     },
     {
       id: 2,
-      title: "TensorFlow Developer Certificate",
-      organization: "Google",
-      date: "August 2022",
-      image: "https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
+      title: "Development of a Image based Attendance tracking",
+      organization: "Tekcogent Solutions Private Limited (Internship)",
+      date: "May 2025",
+      image: `${import.meta.env.BASE_URL}assets/certificate_2.jpg`
     },
-    {
-      id: 3,
-      title: "Data Science Professional Certificate",
-      organization: "IBM",
-      date: "May 2022",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
-    },
-    {
-      id: 4,
-      title: "Machine Learning Engineer Nanodegree",
-      organization: "Udacity",
-      date: "January 2022",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
-    }
+    // {
+    //   id: 3,
+    //   title: "Data Science Professional Certificate",
+    //   organization: "IBM",
+    //   date: "May 2022",
+    //   image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Machine Learning Engineer Nanodegree",
+    //   organization: "Udacity",
+    //   date: "January 2022",
+    //   image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
+    // }
   ];
 
   const handleOpenCertificate = (certificate: Certificate) => {

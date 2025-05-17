@@ -12,48 +12,48 @@ export default function ExperienceSection() {
   const experiences: Experience[] = [
     {
       id: 1,
-      role: "Senior AI Engineer",
-      company: "TechVision AI",
-      duration: "January 2023 - Present",
+      role: "AI/ML Developer Intern",
+      company: "Tekcogent Solutions Private Limited",
+      duration: "February 2025 - May 2025",
       description: [
-        "Lead a team of 5 engineers in developing state-of-the-art computer vision solutions for autonomous vehicles, increasing detection accuracy by 27%.",
-        "Architected and implemented a real-time object detection system using YOLO and TensorFlow, processing 60+ frames per second.",
-        "Collaborated with cross-functional teams to integrate AI solutions into production systems, reducing deployment time by 40%."
+        "Built an automated attendance system using FaceNet(face recognition) + YOLOv8 (real-time detection) in Python/OpenCV.",
+        "Achieved 95% accuracy, reducing manual errors by 30%. Optimized YOLOv8 for low-light conditions, cutting false positives by 25%",
+        "Deployed via Flask API, integrating with existing workflows.  Evaluated performance using precision-recall metrics, improving model robustness"
       ]
     },
-    {
-      id: 2,
-      role: "Machine Learning Engineer",
-      company: "DataCraft Solutions",
-      duration: "June 2021 - December 2022",
-      description: [
-        "Developed and optimized machine learning models for natural language processing tasks, achieving 92% accuracy in sentiment analysis.",
-        "Built a recommendation engine that increased user engagement by 35% and improved content discovery metrics.",
-        "Implemented CI/CD pipelines for ML models, reducing model deployment time from days to hours."
-      ]
-    },
-    {
-      id: 3,
-      role: "Data Science Intern",
-      company: "QuantumLeap Analytics",
-      duration: "January 2021 - May 2021",
-      description: [
-        "Analyzed large datasets using Python, SQL, and visualization tools to extract actionable insights for business decisions.",
-        "Created automated data processing workflows that reduced manual data cleaning time by 60%.",
-        "Contributed to the development of a predictive maintenance model that decreased equipment downtime by 25%."
-      ]
-    },
-    {
-      id: 4,
-      role: "Research Assistant",
-      company: "University AI Research Lab",
-      duration: "September 2020 - December 2020",
-      description: [
-        "Assisted in research projects focused on reinforcement learning applications in robotics.",
-        "Implemented and tested various deep learning architectures to improve model performance.",
-        "Co-authored a research paper on efficient training methods for large language models."
-      ]
-    }
+    // {
+    //   id: 2,
+    //   role: "Machine Learning Engineer",
+    //   company: "DataCraft Solutions",
+    //   duration: "June 2021 - December 2022",
+    //   description: [
+    //     "Developed and optimized machine learning models for natural language processing tasks, achieving 92% accuracy in sentiment analysis.",
+    //     "Built a recommendation engine that increased user engagement by 35% and improved content discovery metrics.",
+    //     "Implemented CI/CD pipelines for ML models, reducing model deployment time from days to hours."
+    //   ]
+    // },
+    // {
+    //   id: 3,
+    //   role: "Data Science Intern",
+    //   company: "QuantumLeap Analytics",
+    //   duration: "January 2021 - May 2021",
+    //   description: [
+    //     "Analyzed large datasets using Python, SQL, and visualization tools to extract actionable insights for business decisions.",
+    //     "Created automated data processing workflows that reduced manual data cleaning time by 60%.",
+    //     "Contributed to the development of a predictive maintenance model that decreased equipment downtime by 25%."
+    //   ]
+    // },
+    // {
+    //   id: 4,
+    //   role: "Research Assistant",
+    //   company: "University AI Research Lab",
+    //   duration: "September 2020 - December 2020",
+    //   description: [
+    //     "Assisted in research projects focused on reinforcement learning applications in robotics.",
+    //     "Implemented and tested various deep learning architectures to improve model performance.",
+    //     "Co-authored a research paper on efficient training methods for large language models."
+    //   ]
+    // }
   ];
 
   return (

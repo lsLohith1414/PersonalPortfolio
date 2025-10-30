@@ -86,7 +86,7 @@ export default function ContactSection() {
           import.meta.env.VITE_EMAILJS_SERVICE_ID, 
           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           templateParams,
-          import.meta.env.VITE_EMAILJS_USER_ID
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         );
         
         toast({

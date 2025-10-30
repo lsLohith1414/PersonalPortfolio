@@ -16,7 +16,7 @@ export default function ProjectsSection() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/project1.png`}
+                  src={`${import.meta.env.BASE_URL}assets/project1.jpeg`}
                   alt="Malicious Website Detection"
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/project2.png`}
+                  src={`${import.meta.env.BASE_URL}assets/project2.jpeg`}
                   alt="Sentiment Analysis on Product Reviews"
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />
@@ -91,7 +91,7 @@ export default function ProjectsSection() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/project3.png`}
+                  src={`${import.meta.env.BASE_URL}assets/project3.jpeg`}
                   alt="COVID-19 Detection using Chest X-ray Images"
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />

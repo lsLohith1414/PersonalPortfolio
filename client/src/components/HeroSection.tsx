@@ -22,7 +22,7 @@ export default function HeroSection() {
               I am <span className="text-blue-300">Lohith H S</span>
             </h1>
             <h2 className="font-heading font-semibold text-xl md:text-2xl mb-6 animate-fadeUp animation-delay-200">
-              AI/ML Engineer | Data Scientist | MERN Stack Developer
+              Aspiring Data Scientist & AI/ML Engineer 
             </h2>
             <p className="font-body text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fadeUp animation-delay-400">
               Transforming Data into Actionable Insights

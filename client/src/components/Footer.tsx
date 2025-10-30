@@ -64,9 +64,9 @@ export default function Footer() {
                     href="https://twitter.com/Lohithhs14"  className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
               <i className="fab fa-twitter text-xl"></i>
             </a>
-            <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
+            {/* <a href="#" className="hover:text-blue-300 transition-colors transform hover:-translate-y-1">
               <i className="fab fa-medium-m text-xl"></i>
-            </a>
+            </a> */}
           </div>
         </div>
         

@@ -63,10 +63,10 @@ export default function Navbar() {
             Certifications
             <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#blog" className="nav-link font-body font-semibold relative hover:text-primary-light transition-colors duration-300">
+          {/* <a href="#blog" className="nav-link font-body font-semibold relative hover:text-primary-light transition-colors duration-300">
             Blog
             <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
+          </a> */}
           <a href="#contact" className="nav-link font-body font-semibold relative hover:text-primary-light transition-colors duration-300">
             Contact
             <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>

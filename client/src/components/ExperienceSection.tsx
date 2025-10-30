@@ -16,44 +16,27 @@ export default function ExperienceSection() {
       company: "Tekcogent Solutions Private Limited",
       duration: "February 2025 - May 2025",
       description: [
-        "Built an automated attendance system using FaceNet(face recognition) + YOLOv8 (real-time detection) in Python/OpenCV.",
-        "Achieved 95% accuracy, reducing manual errors by 30%. Optimized YOLOv8 for low-light conditions, cutting false positives by 25%",
-        "Deployed via Flask API, integrating with existing workflows.  Evaluated performance using precision-recall metrics, improving model robustness"
+        "Built an automated attendance system using FaceNet (face recognition) + YOLOv8 (real-time detection) in Python/OpenCV.",
+        "Achieved 95% accuracy, reducing manual errors by 30%. Optimized YOLOv8 for low-light conditions, cutting false positives by 25%.",
+        "Deployed via Flask API, integrating with existing workflows. Evaluated performance using precision-recall metrics, improving model robustness.",
+        "Processed and prepared a dataset of employee face images for training and validation.",
+        "Tested the model in real-time using live camera input to verify detection and recognition accuracy."
       ]
     },
-    // {
-    //   id: 2,
-    //   role: "Machine Learning Engineer",
-    //   company: "DataCraft Solutions",
-    //   duration: "June 2021 - December 2022",
-    //   description: [
-    //     "Developed and optimized machine learning models for natural language processing tasks, achieving 92% accuracy in sentiment analysis.",
-    //     "Built a recommendation engine that increased user engagement by 35% and improved content discovery metrics.",
-    //     "Implemented CI/CD pipelines for ML models, reducing model deployment time from days to hours."
-    //   ]
-    // },
-    // {
-    //   id: 3,
-    //   role: "Data Science Intern",
-    //   company: "QuantumLeap Analytics",
-    //   duration: "January 2021 - May 2021",
-    //   description: [
-    //     "Analyzed large datasets using Python, SQL, and visualization tools to extract actionable insights for business decisions.",
-    //     "Created automated data processing workflows that reduced manual data cleaning time by 60%.",
-    //     "Contributed to the development of a predictive maintenance model that decreased equipment downtime by 25%."
-    //   ]
-    // },
-    // {
-    //   id: 4,
-    //   role: "Research Assistant",
-    //   company: "University AI Research Lab",
-    //   duration: "September 2020 - December 2020",
-    //   description: [
-    //     "Assisted in research projects focused on reinforcement learning applications in robotics.",
-    //     "Implemented and tested various deep learning architectures to improve model performance.",
-    //     "Co-authored a research paper on efficient training methods for large language models."
-    //   ]
-    // }
+    {
+      id: 2,
+      role: "Data Science Intern",
+      company: "Ai Variant (Information Technology & Services)",
+      duration: "December 2024 - February 2025",
+      description: [
+        "Cleaned and prepared text data by applying tokenization, stop-word removal, stemming, and lemmatization to make it ready for analysis.",
+        "Created text features using TF-IDF and word embeddings to better understand the meaning and context of words.",
+        "Trained and tested multiple machine learning models — Random Forest, XGBoost, SVM, Logistic Regression, and LGBM — to find the best-performing one.",
+        "Found that LGBM gave the highest accuracy of 73%, so it was chosen as the final model for deployment.",
+        "Built an interactive Streamlit app where users can enter product reviews and instantly see sentiment results.",
+        "Used FastAPI for the backend to deploy the model efficiently and ensure fast, reliable predictions."
+      ]
+    }
   ];
 
   return (
@@ -72,12 +55,12 @@ export default function ExperienceSection() {
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={exp.id} className="flex flex-col md:flex-row items-center">
-                {/* Timeline dot for desktop */}
+                {/* Timeline dot */}
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
                   <div className="w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
                 </div>
                 
-                {/* Content layout - alternating sides on desktop */}
+                {/* Card layout */}
                 <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left order-first md:order-last'}`}>
                   <ScrollAnimation 
                     animation={index % 2 === 0 ? "fade-in-right" : "fade-in-left"} 
@@ -101,7 +84,6 @@ export default function ExperienceSection() {
                   </ScrollAnimation>
                 </div>
                 
-                {/* Empty div for layout balance */}
                 <div className="md:w-1/2"></div>
               </div>
             ))}

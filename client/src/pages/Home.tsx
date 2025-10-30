@@ -45,7 +45,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsSection />
       <CertificationsSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ContactSection />
       <Footer />
     </div>

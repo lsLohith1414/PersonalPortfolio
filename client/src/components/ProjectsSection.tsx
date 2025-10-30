@@ -5,43 +5,39 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollAnimation>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">Projects & Case Studies</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-900 text-center mb-16">
+            Projects & Case Studies
+          </h2>
         </ScrollAnimation>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project 1 */}
           <ScrollAnimation animation="fade-in-up" delay={100}>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
-                <img 
-                  src= {`${import.meta.env.BASE_URL}assets/project1.jpg`}
-                  alt="AI-Powered Customer Sentiment Analysis Dashboard" 
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/project1.png`}
+                  alt="Malicious Website Detection"
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-heading font-bold text-xl mb-2">AI-Powered Sentiment Analysis</h3>
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  Malicious Website Detection Using Machine Learning
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Developed a real-time sentiment analysis system for customer feedback using NLP and machine learning algorithms, increasing customer satisfaction by 35%.
+                  Developed a machine learning model to classify websites as safe or malicious using extracted URL-based features. Trained and evaluated models such as Random Forest and Decision Tree to ensure accurate and reliable predictions.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Python</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">TensorFlow</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Flask</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Yolov8</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">FaceNet</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Scikit-learn</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Machine Learning</span>
                 </div>
                 <div className="flex space-x-3">
-                  <a 
-                    href="#" 
-                    className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fas fa-external-link-alt mr-1"></i> Live Demo
-                  </a>
-                  <a 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                    href="https://github.com/lsLohith1414/Face_attendance_tracking" 
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414/ML_Project_Networksecurity.git"
                     className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
                   >
                     <i className="fab fa-github mr-1"></i> GitHub
@@ -50,115 +46,37 @@ export default function ProjectsSection() {
               </div>
             </div>
           </ScrollAnimation>
-          {/*  
-        {/* Project 2 */}
-         {/* <ScrollAnimation animation="fade-in-up" delay={200}>
+
+          {/* Project 2 */}
+          <ScrollAnimation animation="fade-in-up" delay={200}>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
-                  alt="Medical Image Analysis using Deep Learning" 
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/project2.png`}
+                  alt="Sentiment Analysis on Product Reviews"
                   className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-heading font-bold text-xl mb-2">Medical Image Analysis</h3>
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  Sentiment Analysis on Product Reviews
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Built a deep learning system for automated detection of abnormalities in medical images with 94% accuracy, reducing diagnostic time by 60%.
+                  Built an end-to-end system using LGBM with a Streamlit frontend and FastAPI backend to analyze customer review sentiments with 73% accuracy. Implemented NLP preprocessing using NLTK and spaCy for effective text analysis.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">PyTorch</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">CNN</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Computer Vision</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">React</span>
-                </div>
-                <div className="flex space-x-3">
-                  <a 
-                    href="#" 
-                    className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fas fa-external-link-alt mr-1"></i> Live Demo
-                  </a>
-                  <a 
-                    href="#" 
-                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fab fa-github mr-1"></i> GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimation>*/}
-          
-          {/* Project 3 */}
-        {/*  <ScrollAnimation animation="fade-in-up" delay={300}>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1565514158740-064f34bd6cfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
-                  alt="Financial Forecasting Platform" 
-                  className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-heading font-bold text-xl mb-2">Financial Forecasting Platform</h3>
-                <p className="text-gray-600 mb-4">
-                  Designed and implemented a MERN stack application for financial forecasting using time series analysis and machine learning algorithms.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">MongoDB</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Express</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">React</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Node.js</span>
-                </div>
-                <div className="flex space-x-3">
-                  <a 
-                    href="#" 
-                    className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fas fa-external-link-alt mr-1"></i> Live Demo
-                  </a>
-                  <a 
-                    href="#" 
-                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fab fa-github mr-1"></i> GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimation>*/}
-          
-          {/* Project 4 */}
-         {/* <ScrollAnimation animation="fade-in-up" delay={400}>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
-                  alt="Intelligent Conversational AI Assistant" 
-                  className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-heading font-bold text-xl mb-2">Intelligent Conversational AI</h3>
-                <p className="text-gray-600 mb-4">
-                  Created an advanced conversational AI assistant using natural language processing and reinforcement learning for contextual understanding.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">NLP</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Transformer Models</span>
-                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">GPT</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Python</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">NLTK</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">spaCy</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">LGBM</span>
                   <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">FastAPI</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Streamlit</span>
                 </div>
                 <div className="flex space-x-3">
-                  <a 
-                    href="#" 
-                    className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
-                  >
-                    <i className="fas fa-external-link-alt mr-1"></i> Live Demo
-                  </a>
-                  <a 
-                    href="#" 
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414/-Sentiment_Analysis_on_review_product.git"
                     className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
                   >
                     <i className="fab fa-github mr-1"></i> GitHub
@@ -166,7 +84,45 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </ScrollAnimation>*/}
+          </ScrollAnimation>
+
+          {/* Project 3 */}
+          <ScrollAnimation animation="fade-in-up" delay={300}>
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <div className="overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/project3.png`}
+                  alt="COVID-19 Detection using Chest X-ray Images"
+                  className="w-full h-56 object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  COVID-19 Detection using Chest X-ray Images
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Developed a CNN-based deep learning model using TensorFlow and VGG19 architecture to classify chest X-rays into Normal, Pneumonia, and COVID-19 categories with high accuracy.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Python</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">TensorFlow</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">CNN</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">VGG19</span>
+                  <span className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">Deep Learning</span>
+                </div>
+                <div className="flex space-x-3">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/lsLohith1414/COVID_19_Chest_X_ray_Classifier.git"
+                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition-all duration-300 text-sm"
+                  >
+                    <i className="fab fa-github mr-1"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>

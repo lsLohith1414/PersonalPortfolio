@@ -151,7 +151,7 @@ export default function ContactSection() {
                     id="name" 
                     name="name" 
                     className={`w-full px-4 py-3 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all`} 
-                    placeholder="John Doe"
+                    placeholder="Lohith HS"
                     onChange={handleChange}
                   />
                   {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -163,7 +163,7 @@ export default function ContactSection() {
                     id="email" 
                     name="email" 
                     className={`w-full px-4 py-3 border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all`}
-                    placeholder="john@example.com"
+                    placeholder="Lohith@example.com"
                     onChange={handleChange}
                   />
                   {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -295,12 +295,12 @@ export default function ContactSection() {
                   >
                     <i className="fab fa-twitter text-xl"></i>
                   </a>
-                  <a 
+                  {/* <a 
                     href="#" 
                     className="bg-blue-100 text-blue-900 hover:bg-blue-900 hover:text-white p-3 rounded-full transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <i className="fab fa-medium-m text-xl"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </ScrollAnimation>

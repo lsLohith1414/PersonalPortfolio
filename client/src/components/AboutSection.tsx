@@ -38,10 +38,10 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-in-left" className="md:w-3/5" delay={200}>
             <h3 className="text-2xl font-heading font-semibold mb-4">Who I Am</h3>
             <p className="text-lg mb-6 leading-relaxed">
-            I am a passionate AI/ML enthusiast and aspiring Data Scientist with a strong foundation in developing innovative solutions that transform data into actionable insights. My expertise includes machine learning, deep learning, computer vision, and full-stack development using the MERN stack.
+              I’m an enthusiastic AI/ML Engineer and aspiring Data Scientist with a strong interest in Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing (NLP). I’m passionate about exploring how intelligent systems can understand data, learn patterns, and make meaningful predictions. My academic journey has helped me build a solid foundation in AI concepts, model development, and data analysis, while constantly improving my problem-solving and programming skills.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-            Through academic projects and internships, I have successfully implemented AI solutions, such as an image-based attendance tracking system using FaceNet and YOLOv8, optimizing model accuracy and reducing false positives. I am committed to continuous learning and staying updated with the latest advancements in AI/ML to create impactful, data-driven solutions.
+            As a fresher, I’m driven by curiosity and a desire to learn continuously from real-world challenges. I enjoy experimenting with new AI techniques, improving model performance, and understanding how data-driven insights can make a difference in people’s lives. My goal is to grow as a skilled AI professional who can contribute to innovative projects and help shape the future of intelligent technology.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

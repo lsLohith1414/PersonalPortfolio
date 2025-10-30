@@ -1,3 +1,56 @@
+# name: Deploy to GitHub Pages
+
+# on:
+#   push:
+#     branches:
+#       - main
+#   workflow_dispatch:
+
+# permissions:
+#   contents: write
+
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '18'
+#           cache: 'npm'
+#           cache-dependency-path: './client/package-lock.json'
+
+#       - name: Install Dependencies
+#         run: |
+#           cd client
+#           npm ci
+
+#       - name: Create env file
+#         run: |
+#           cd client
+#           echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> .env
+#           echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> .env
+#           echo "VITE_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}" >> .env
+
+#       - name: Build
+#         run: |
+#           cd client
+#           npm run build
+
+#       - name: Deploy to GitHub Pages
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           folder: client/dist
+#           branch: gh-pages
+#           clean: true 
+
+
+
+
+
 name: Deploy to GitHub Pages
 
 on:
@@ -12,6 +65,10 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,25 +81,20 @@ jobs:
           cache-dependency-path: './client/package-lock.json'
 
       - name: Install Dependencies
-        run: |
-          cd client
-          npm ci
+        run: npm ci
 
-      - name: Create env file
+      - name: Create .env file
         run: |
-          cd client
           echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> .env
           echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> .env
           echo "VITE_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}" >> .env
 
-      - name: Build
-        run: |
-          cd client
-          npm run build
+      - name: Build project
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: client/dist
           branch: gh-pages
-          clean: true 
+          folder: client/dist
+          clean: true
